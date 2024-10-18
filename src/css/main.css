@@ -80,9 +80,38 @@ table {
 @media screen and (max-width: 460px) {
   body {
     background: white;
+    align-items: flex-start;
   }
 
   .container {
     box-shadow: none;
+    width: 120px;
   }
+
+  .calculator .display {
+    padding: 10px;
+    width: 18em;
+    margin: 6px;
+    border: 2px solid black;
+    box-shadow: 5px 5px gray;
+    font-size: 20px;
+    font-family: monospace;
+    text-align: right;
+  }
+  
+  .calculator button {
+    cursor: pointer;
+    padding: 10px;
+    margin: 3px;
+    width: 75px;
+    font-size: 16px;
+    box-shadow: 2px 1px 2px #000000a0;
+    background-color: #dfdfdf;
+    border: 2px solid black;
+    box-shadow: 5px 5px rgba(128, 128, 128, 0.762);
+    color: #000000;
+  }
+
+
+
 }
