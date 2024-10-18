@@ -16,24 +16,24 @@ function createCalculator() {
         calculation = eval(calculation);
 
         if (!calculation) {
-          // Corrigido de 'conta' para 'calculation'
+      
           alert("Conta Inválida");
           return;
         }
 
-        this.display.value = String(calculation); // Corrigido de 'conta' para 'calculation'
+        this.display.value = String(calculation); 
       } catch (e) {
         alert("Conta Inválida");
       }
-    }, // Corrigido de ',' para '}' para fechar a função
+    }, 
 
     clickBtn() {
-      // this -> calculadora
+      
       document.addEventListener(
         "click",
         function (e) {
           const el = e.target;
-          // this -> document
+          
 
           if (el.classList.contains("btn-num")) {
             this.btnForDisplay(el.innerText);
@@ -48,14 +48,14 @@ function createCalculator() {
           }
 
           if (el.classList.contains("btn-equal")) {
-            // Corrigido de 'classListcontains' para 'classList.contains'
+           
             this.displayResult();
           }
 
           this.display.focus();
 
         }.bind(this)
-      ); // Fazendo o js usar o 'this' da calculadora
+      ); 
     },
 
     btnForDisplay(value) {
