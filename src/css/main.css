@@ -1,21 +1,3 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  text-decoration: none;
-  outline: none;
-  box-sizing: border-box;
-}
-
-body {
-  background: linear-gradient(-40deg, #2c5049, #345e5c, #2c5046, #4c685f);
-  * {
-  margin: 0px;
-  padding: 0px;
-  text-decoration: none;
-  outline: none;
-  box-sizing: border-box;
-}
-
 body {
   background: linear-gradient(-40deg, #2c5049, #345e5c, #2c5046, #4c685f);
   font-family: monospace;
@@ -23,6 +5,15 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
+  * {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
 }
 
 .container {
