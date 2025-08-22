@@ -13,17 +13,16 @@ function createCalculator() {
     displayResult() {
       let calculation = this.display.value;
       try {
-        calculation = eval(calculation);
-
-        if (!calculation) {
-      
+        calculation = new Function('return ' + calculation)();
+        if (!isFinite(calculation)) {
           alert("Conta Inválida");
           return;
         }
-
+        
         this.display.value = String(calculation); 
       } catch (e) {
         alert("Conta Inválida");
+        return;
       }
     }, 
 
